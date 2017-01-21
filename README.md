@@ -1,2 +1,2 @@
-# data-grid
+# data-bus
 Configurable REST Server
