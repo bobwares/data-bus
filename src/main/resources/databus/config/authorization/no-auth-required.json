@@ -1,0 +1,5 @@
+{
+  "authKey": "no-auth-required",
+  "authorizationProviderKey" : "securityPolicyAuthorizationProvider",
+  "authenticated" : false
+}

@@ -1,0 +1,15 @@
+package com.bobwares.databus.common.rest;
+
+public enum ErrorMessageCode {
+	ACCESS_DENIED,
+	APPLICATION_ERROR,
+	AUTHENTICATION_REQUIRED,
+	BAD_AUTHENTICATION_ATTEMPT,
+	DUPLICATE,
+	INVALID,
+	LOCKED,
+	MISSING,
+	NOT_FOUND,
+	READONLY,
+	TIMEOUT
+}

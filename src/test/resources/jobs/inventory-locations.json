@@ -1,0 +1,21 @@
+{
+  "jobKey":"inventory-location",
+  "fields": [
+    {
+      "property": "locationName",
+      "type": "string"
+      },
+    {
+      "property": "superLocation",
+      "type": "String"
+    },
+    {
+      "property": "geotype",
+      "type": "String"
+    },
+    {
+      "property": "mapping",
+      "type": "array"
+    }
+  ]
+}
