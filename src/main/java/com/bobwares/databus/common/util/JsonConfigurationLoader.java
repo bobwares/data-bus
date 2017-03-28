@@ -1,7 +1,7 @@
 package com.bobwares.databus.common.util;
 
-import com.bobwares.loader.util.ObjectUtils;
-import com.bobwares.loader.util.ResourceUtils;
+import com.bobwares.core.util.ObjectUtils;
+import com.bobwares.core.util.ResourceUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
@@ -16,7 +16,8 @@ import java.util.Map;
 
 @Service
 public class JsonConfigurationLoader implements ConfigurationLoader {
-    final Logger logger = LoggerFactory.getLogger(getClass());
+
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
 	public <T> Map<String,T> loadConfigurations(String folder, Class<T> configurationType) {

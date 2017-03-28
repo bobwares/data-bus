@@ -3,11 +3,12 @@ package com.bobwares.databus.server.registry.loader.impl;
 
 import com.bobwares.core.bean.Registry;
 import com.bobwares.databus.common.annotation.RegistryLoaderComponent;
+import com.bobwares.databus.common.util.ConfigurationLoader;
 import com.bobwares.databus.server.authorization.AuthorizationProvider;
 import com.bobwares.databus.server.config.DataBusConfig;
 import com.bobwares.databus.server.registry.loader.RegistryLoader;
 import com.bobwares.databus.server.registry.model.AuthorizationDefinition;
-import com.bobwares.loader.util.JobConfigurationLoader;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
@@ -18,7 +19,7 @@ import java.util.Map;
 
 @RegistryLoaderComponent
 public class AuthorizationRegistryLoader implements RegistryLoader<AuthorizationDefinition> {
-    final Logger logger = LoggerFactory.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     private DataBusConfig dataBusConfig;
 
@@ -34,14 +35,14 @@ public class AuthorizationRegistryLoader implements RegistryLoader<Authorization
         this.applicationContext = applicationContext;
     }
 
-    private JobConfigurationLoader configurationLoader;
+    private ConfigurationLoader configurationLoader;
 
     @Inject
-    public void setConfigurationLoader(JobConfigurationLoader configurationLoader) {
+    public void setConfigurationLoader(ConfigurationLoader configurationLoader) {
         this.configurationLoader = configurationLoader;
     }
 
-    Registry<AuthorizationDefinition> authorizationDefinitionRegistry;
+    private Registry<AuthorizationDefinition> authorizationDefinitionRegistry;
 
     @Inject
     public void setAuthorizationDefinitionRegistry(Registry<AuthorizationDefinition> authorizationDefinitionRegistry) {

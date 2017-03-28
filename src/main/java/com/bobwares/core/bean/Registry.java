@@ -1,7 +1,7 @@
 package com.bobwares.core.bean;
 
 import com.bobwares.core.util.ApplicationContextUtils;
-import com.bobwares.loader.util.StringUtils;
+import com.bobwares.core.util.StringUtils;
 
 
 import org.springframework.beans.factory.BeanNameAware;

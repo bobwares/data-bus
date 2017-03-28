@@ -1,15 +1,12 @@
 package com.bobwares.loader.util;
 
-import com.bobwares.CsvReaderApplication;
 import com.bobwares.databus.LoadResourceConfiguration;
 import com.bobwares.databus.common.model.Field;
 import com.bobwares.databus.common.model.Info;
 import com.bobwares.databus.common.model.ResourceConfiguration;
-import com.bobwares.databus.server.config.DataBusServerConfiguration;
 import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.test.context.ContextConfiguration;
 
 import java.util.List;
 
@@ -19,7 +16,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ResourceConfigurationTest  {
 
-    ResourceConfiguration resourceConfiguration;
+    private ResourceConfiguration resourceConfiguration;
 
     @Before
     public void setup() {
