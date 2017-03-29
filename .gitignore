@@ -1,0 +1,34 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+.idea/inspectionProfiles/
+.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml
+.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml
+.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml
+.idea/libraries/Maven__com_google_guava_guava_19_0.xml
+.idea/libraries/Maven__javax_inject_javax_inject_1.xml
+.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml
+.idea/libraries/Maven__joda_time_joda_time_2_9_7.xml
+.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml
+.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml
+.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_0.xml
+.idea/libraries/Maven__org_springframework_integration_spring_integration_java_dsl_1_2_1_RELEASE.xml
+.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_0_RELEASE.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+data-bus.iml
+target/
