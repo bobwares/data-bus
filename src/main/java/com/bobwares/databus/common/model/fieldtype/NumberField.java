@@ -1,6 +1,7 @@
 package com.bobwares.databus.common.model.fieldtype;
 
-import com.bobwares.databus.common.model.Alignment;
+import com.bobwares.databus.common.renderer.pdf.Alignment;
+
 import java.text.NumberFormat;
 import java.util.Locale;
 

@@ -1,0 +1,15 @@
+{
+  "storedProcedure": "MOCK",
+  "title": "Test ColumnTransformationService",
+  "fields": [
+    {
+      "property": "testQualifier",
+      "type": "string",
+      "hasQualifiers":true
+    },
+    {
+      "property": "testArray",
+      "type": "array"
+    }
+  ]
+}

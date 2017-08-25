@@ -1,7 +1,5 @@
 package com.bobwares.databus.server.registry.model;
 
-
-
 import com.bobwares.databus.common.model.ResourceConfiguration;
 
 import java.net.URI;

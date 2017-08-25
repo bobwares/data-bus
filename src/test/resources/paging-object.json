@@ -1,0 +1,296 @@
+{
+  "items": [
+    {
+      "region": "California ",
+      "item": "AGENCY",
+      "eligible": 7,
+      "enrolled": 2,
+      "inactive": 0,
+      "notEnrolled": 5,
+      "percentage": 29
+    },
+    {
+      "region": "California ",
+      "item": "CSR/Producer",
+      "eligible": 32,
+      "enrolled": 1,
+      "inactive": 0,
+      "notEnrolled": 31,
+      "percentage": 3
+    },
+    {
+      "region": "California ",
+      "item": "Principal",
+      "eligible": 5,
+      "enrolled": 1,
+      "inactive": 0,
+      "notEnrolled": 4,
+      "percentage": 20
+    },
+    {
+      "region": "California ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 37,
+      "enrolled": 2,
+      "inactive": 0,
+      "notEnrolled": 35,
+      "percentage": 5
+    },
+    {
+      "region": "Central ",
+      "item": "AGENCY",
+      "eligible": 17,
+      "enrolled": 8,
+      "inactive": 0,
+      "notEnrolled": 9,
+      "percentage": 47
+    },
+    {
+      "region": "Central ",
+      "item": "CSR/Producer",
+      "eligible": 252,
+      "enrolled": 35,
+      "inactive": 0,
+      "notEnrolled": 217,
+      "percentage": 14
+    },
+    {
+      "region": "Central ",
+      "item": "Principal",
+      "eligible": 11,
+      "enrolled": 3,
+      "inactive": 0,
+      "notEnrolled": 8,
+      "percentage": 27
+    },
+    {
+      "region": "Central ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 263,
+      "enrolled": 38,
+      "inactive": 0,
+      "notEnrolled": 225,
+      "percentage": 14
+    },
+    {
+      "region": "Mid-Atlantic ",
+      "item": "AGENCY",
+      "eligible": 16,
+      "enrolled": 7,
+      "inactive": 0,
+      "notEnrolled": 9,
+      "percentage": 44
+    },
+    {
+      "region": "Mid-Atlantic ",
+      "item": "CSR/Producer",
+      "eligible": 38,
+      "enrolled": 8,
+      "inactive": 0,
+      "notEnrolled": 30,
+      "percentage": 21
+    },
+    {
+      "region": "Mid-Atlantic ",
+      "item": "Principal",
+      "eligible": 8,
+      "enrolled": 1,
+      "inactive": 0,
+      "notEnrolled": 7,
+      "percentage": 13
+    },
+    {
+      "region": "Mid-Atlantic ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 46,
+      "enrolled": 9,
+      "inactive": 0,
+      "notEnrolled": 37,
+      "percentage": 20
+    },
+    {
+      "region": "Midwest ",
+      "item": "AGENCY",
+      "eligible": 14,
+      "enrolled": 6,
+      "inactive": 0,
+      "notEnrolled": 8,
+      "percentage": 43
+    },
+    {
+      "region": "Midwest ",
+      "item": "CSR/Producer",
+      "eligible": 71,
+      "enrolled": 10,
+      "inactive": 0,
+      "notEnrolled": 61,
+      "percentage": 14
+    },
+    {
+      "region": "Midwest ",
+      "item": "Principal",
+      "eligible": 7,
+      "enrolled": 3,
+      "inactive": 0,
+      "notEnrolled": 4,
+      "percentage": 43
+    },
+    {
+      "region": "Midwest ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 78,
+      "enrolled": 13,
+      "inactive": 0,
+      "notEnrolled": 65,
+      "percentage": 17
+    },
+    {
+      "region": "Mountain ",
+      "item": "AGENCY",
+      "eligible": 10,
+      "enrolled": 6,
+      "inactive": 0,
+      "notEnrolled": 4,
+      "percentage": 60
+    },
+    {
+      "region": "Mountain ",
+      "item": "CSR/Producer",
+      "eligible": 53,
+      "enrolled": 6,
+      "inactive": 0,
+      "notEnrolled": 47,
+      "percentage": 11
+    },
+    {
+      "region": "Mountain ",
+      "item": "Principal",
+      "eligible": 6,
+      "enrolled": 3,
+      "inactive": 0,
+      "notEnrolled": 3,
+      "percentage": 50
+    },
+    {
+      "region": "Mountain ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 59,
+      "enrolled": 9,
+      "inactive": 0,
+      "notEnrolled": 50,
+      "percentage": 15
+    },
+    {
+      "region": "Northeast ",
+      "item": "AGENCY",
+      "eligible": 10,
+      "enrolled": 2,
+      "inactive": 0,
+      "notEnrolled": 8,
+      "percentage": 20
+    },
+    {
+      "region": "Northeast ",
+      "item": "CSR/Producer",
+      "eligible": 119,
+      "enrolled": 18,
+      "inactive": 0,
+      "notEnrolled": 101,
+      "percentage": 15
+    },
+    {
+      "region": "Northeast ",
+      "item": "Principal",
+      "eligible": 10,
+      "enrolled": 1,
+      "inactive": 0,
+      "notEnrolled": 9,
+      "percentage": 10
+    },
+    {
+      "region": "Northeast ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 129,
+      "enrolled": 19,
+      "inactive": 0,
+      "notEnrolled": 110,
+      "percentage": 15
+    },
+    {
+      "region": "Northwest ",
+      "item": "AGENCY",
+      "eligible": 9,
+      "enrolled": 3,
+      "inactive": 0,
+      "notEnrolled": 6,
+      "percentage": 33
+    },
+    {
+      "region": "Northwest ",
+      "item": "CSR/Producer",
+      "eligible": 24,
+      "enrolled": 1,
+      "inactive": 0,
+      "notEnrolled": 23,
+      "percentage": 4
+    },
+    {
+      "region": "Northwest ",
+      "item": "Principal",
+      "eligible": 10,
+      "enrolled": 3,
+      "inactive": 0,
+      "notEnrolled": 7,
+      "percentage": 30
+    },
+    {
+      "region": "Northwest ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 34,
+      "enrolled": 4,
+      "inactive": 0,
+      "notEnrolled": 30,
+      "percentage": 12
+    },
+    {
+      "region": "Southeast ",
+      "item": "AGENCY",
+      "eligible": 17,
+      "enrolled": 9,
+      "inactive": 0,
+      "notEnrolled": 8,
+      "percentage": 53
+    },
+    {
+      "region": "Southeast ",
+      "item": "CSR/Producer",
+      "eligible": 83,
+      "enrolled": 11,
+      "inactive": 0,
+      "notEnrolled": 72,
+      "percentage": 13
+    },
+    {
+      "region": "Southeast ",
+      "item": "Principal",
+      "eligible": 11,
+      "enrolled": 5,
+      "inactive": 0,
+      "notEnrolled": 6,
+      "percentage": 45
+    },
+    {
+      "region": "Southeast ",
+      "item": "TOTAL PARTICIPANTS",
+      "eligible": 94,
+      "enrolled": 16,
+      "inactive": 0,
+      "notEnrolled": 78,
+      "percentage": 17
+    }
+  ],
+  "startIndex": 0,
+  "endIndex": 32,
+  "pageNum": 1,
+  "itemCount": 32
+}

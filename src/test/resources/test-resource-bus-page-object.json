@@ -1,0 +1,18 @@
+{
+  "startIndex": 0,
+  "endIndex": 10,
+  "pageNum": 1,
+  "itemCount": 1,
+  "items": [
+    {
+      "testQualifier": "12345",
+      "testQualifierQualifier1": "value of Qualifier 1",
+      "testQualifierQualifier2": "value of Qualifier 2",
+      "testQualifierQualifier3": "value of Qualifier 3",
+      "testArray1": "arrayValue1",
+      "testArray2": "arrayValue2",
+      "testArray3": "arrayValue3",
+      "recordCount": 1
+    }
+  ]
+}

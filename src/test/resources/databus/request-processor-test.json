@@ -1,0 +1,22 @@
+{
+  "storedProcedure": "DATAGRID_MOCK",
+  "database" : "EP",
+  "authKey":"no-auth-required",
+  "title": "Test ColumnTransformationService",
+  "sortingAllowed" : false,
+  "filteringOnFieldsAllowed" : false,
+  "fields": [
+    {
+      "property": "firstName",
+      "type": "string"
+    },
+    {
+      "property": "lastName",
+      "type": "string"
+    },
+    {
+      "property": "gmin",
+      "type": "string"
+    }
+  ]
+}

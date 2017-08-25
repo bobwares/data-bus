@@ -1,0 +1,111 @@
+{
+  "storedProcedure": "GMFDD_MM_CurrentBalanceRpt",
+  "title": "Current Balance Report",
+  "database": "PORTAL",
+  "orientation": "landscape",
+  "headers": [
+    {
+      "title": "Report Description",
+      "fields": [
+        {
+          "label": "BAC",
+          "properties": [{"property": "bac"}]
+        },
+        {
+          "label": "Dealership Name",
+          "properties": [{"property": "dealershipName"}]
+        },
+        {
+          "label": "Dealership Address",
+          "properties": [
+            {"property": "address1"},
+            {"property": "address2"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Report Filters",
+      "fields": [
+        {
+          "label": "Transaction Date From",
+          "properties": [{"property" :"fromDate"}]
+        },
+        {
+          "label": "Transaction Date To",
+          "properties": [{"property" :"toDate"}]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "property": "bac",
+      "type": "string"
+    },
+    {
+      "property": "fromDate",
+      "type": "monthYear"
+    },
+    {
+      "property": "toDate",
+      "type": "monthYear"
+    }
+  ],
+  "fields": [
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Transaction Date/Time",
+      "property": "dateTime",
+      "required": false,
+      "type": "dateTime",
+      "width": 140
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Transaction Type",
+      "property": "transactionType",
+      "required": false,
+      "type": "string",
+      "width": 100
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Line Item",
+      "property": "lineItem",
+      "required": false,
+      "type": "string",
+      "width": 200
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Detail",
+      "property": "detail",
+      "required": false,
+      "type": "string",
+      "width": 130
+    },
+    {
+      "alignment": "right",
+      "readOnly": false,
+      "label": "Amount",
+      "property": "amount",
+      "required": false,
+      "type": "dollars",
+      "width": 65
+    },
+    {
+      "alignment": "right",
+      "readOnly": false,
+      "label": "Current Balance",
+      "property": "currentBalance",
+      "required": false,
+      "type": "dollars",
+      "width": 90
+    }
+  ]
+}

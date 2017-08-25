@@ -1,0 +1,9 @@
+{
+  "title": "Admin Report Metrics",
+  "authKey":"no-auth-required",
+  "serviceKey":"resource-bus",
+  "resources":[
+    "admin-reports/metrics/metric_1",
+    "admin-reports/metrics/metric_2"
+  ]
+}

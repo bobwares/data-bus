@@ -1,5 +1,7 @@
 package com.bobwares.databus.common.model;
 
+import com.bobwares.databus.common.util.DataBusDatabaseContext;
+
 import java.util.List;
 import java.util.Map;
 
@@ -16,6 +18,16 @@ public class ResourceConfiguration {
     String serviceKey;
     List<String> resources;
     String parentNode;
+    String fileName;
+
+    String orientation;
+    String title;
+    List<Header> headers;
+
+
+    String storedProcedure;
+    String database;
+
 
     public Map<String, Path> getPaths() {
         return paths;
@@ -118,5 +130,57 @@ public class ResourceConfiguration {
 
     public void setHttpMethod(String httpMethod) {
         this.httpMethod = httpMethod;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getOrientation() {
+        return orientation;
+    }
+
+    public void setOrientation(String orientation) {
+        this.orientation = orientation;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public List<Header> getHeaders() {
+        return headers;
+    }
+
+    public void setHeaders(List<Header> headers) {
+        this.headers = headers;
+    }
+
+    public String getStoredProcedure() {
+        return storedProcedure;
+    }
+
+    public void setStoredProcedure(String storedProcedure) {
+        this.storedProcedure = storedProcedure;
+    }
+
+    public String getDatabase() {
+        return database;
+    }
+
+    public void setDatabase(String database) {
+        this.database = database;
+    }
+
+    public void setDatasourceContext() {
+        DataBusDatabaseContext.setDatabase(this.getDatabase());
     }
 }

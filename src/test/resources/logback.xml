@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- This propagates the level settings down to the java.util.logger which limits the amount of logging calls. -->
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
+
+	<!-- Stdout Appender -->
+	<!-- The com.maritz.core.config.LogbackConfiguration class adds a profile filter to this appender when spring starts up. -->
+	<!-- The profile filters uses the profiles defined in the error.file.profiles application property to determine which environments -->
+	<!-- this appender applies to. The default value is !local, which means this appender will be shutoff for all environments except-->
+	<!-- local after the spring context has been created. Until that point this appender is active for all environments which helps -->
+	<!-- when debugging start up problems. -->
+    <appender name="stdoutAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+	<!-- The root logger setup. -->
+	<!-- File and Email appenders are added once spring starts up. See com.maritz.core.config.LogbackConfiguration for details.-->
+	<root level="INFO">
+		<appender-ref ref="stdoutAppender"/>
+  	</root>
+
+    <!--Outputs all SQL -->
+	<!-- <logger name="org.springframework.jdbc.core.JdbcTemplate" level="DEBUG"/> -->
+	<!-- <logger name="org.hibernate.SQL" level="DEBUG"/> -->
+
+</configuration>

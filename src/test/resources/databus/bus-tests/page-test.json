@@ -1,0 +1,18 @@
+{
+  "title": "Test Promotion",
+  "authKey" : " test-auth-key",
+  "serviceKey":"resource-bus",
+  "filters": [
+    {
+      "property": "eP_ProgramCode",
+      "type": "string",
+      "value" : "JOURNEYS_PROGRAM_RANKINGS"
+    }
+  ],
+  "resources":[
+      "bus-tests/text-welcome-header",
+      "bus-tests/text-welcome-sub-header",
+      "bus-tests/text-welcome-bullet-1",
+      "bus-tests/text-welcome-bullet-2"
+  ]
+}

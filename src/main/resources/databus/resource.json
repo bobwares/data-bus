@@ -1,0 +1,43 @@
+{
+  "info": {
+    "title": "National Enrollment Report",
+    "description":"National Enrollment Admin Report",
+    "version":"1.0"
+  },
+  "authKey":"no-auth-required",
+  "storedProcedure": "DATABUS_ENROLLMENT_REPORT_NATIONAL",
+  "sortingAllowed" : false,
+  "filteringOnFieldsAllowed" : false,
+  "fields": [
+    {
+      "label": "Role",
+      "property": "role",
+      "type": "string"
+    },
+    {
+      "label": "Eligible",
+      "property": "eligible",
+      "type": "number"
+    },
+    {
+      "label": "Enrolled",
+      "property": "enrolled",
+      "type": "number"
+    },
+    {
+      "label": "Inactive ",
+      "property": "inactive",
+      "type": "number"
+    },
+    {
+      "label": "Not Enrolled",
+      "property": "notEnrolled",
+      "type": "number"
+    },
+    {
+      "label": "Enrollment %",
+      "property": "percentage",
+      "type": "percentage"
+    }
+  ]
+}
