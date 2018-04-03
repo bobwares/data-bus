@@ -1,10 +1,8 @@
 package com.bobwares.databus.server.registry.model;
 
 
-
 import com.bobwares.databus.common.model.ResourceConfiguration;
 
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 

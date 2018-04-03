@@ -1,5 +1,6 @@
 package com.bobwares.databus.common.model.fieldtype;
 
+
 import com.bobwares.databus.common.model.Alignment;
 
 public interface FieldTypeDefinition {

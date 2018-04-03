@@ -1,7 +1,8 @@
 package com.bobwares.databus.bus.config;
 
 import org.springframework.core.PriorityOrdered;
-import org.springframework.integration.dsl.config.IntegrationFlowBeanPostProcessor;
+
+import org.springframework.integration.config.dsl.IntegrationFlowBeanPostProcessor;
 import org.springframework.stereotype.Component;
 
 

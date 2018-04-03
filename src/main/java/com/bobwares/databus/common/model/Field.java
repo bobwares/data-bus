@@ -1,9 +1,15 @@
 package com.bobwares.databus.common.model;
 
 
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Maps;
+import lombok.Data;
+
 import java.util.Arrays;
+import java.util.Map;
 import java.util.Objects;
 
+@Data
 public class Field {
     String value;
     String label;
@@ -163,7 +169,7 @@ public class Field {
         this.nullOption = nullOption;
     }
 
-    /*public ImmutableMap<String, Object> mapOf() {
+    public ImmutableMap<String, Object> mapOf() {
         Map<String, Object> field = Maps.newHashMap();
         if (alignment != null) {
             // alignment is optional, but don't provide a default
@@ -194,7 +200,7 @@ public class Field {
         field.put("type", type);
         field.put("width", width == 0 ? 100 : width);
         return ImmutableMap.copyOf(field);
-    }*/
+    }
 
     @Override
     public boolean equals(Object o) {

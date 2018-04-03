@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ResourceConfiguration {
+public class ResourceConfig {
 
     final Logger logger = LoggerFactory.getLogger(getClass());
 
-    public ResourceConfiguration() {
+    public ResourceConfig() {
         logger.info("Start ResourceConfiguration");
     }
 

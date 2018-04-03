@@ -1,8 +1,11 @@
 package com.bobwares.databus.common.model;
 
+import lombok.Data;
+
 import java.util.List;
 import java.util.Map;
 
+@Data
 public class ResourceConfiguration {
     String resourcekey;
     Map<String,Path> paths;
@@ -16,6 +19,10 @@ public class ResourceConfiguration {
     String serviceKey;
     List<String> resources;
     String parentNode;
+    List<Header> headers;
+    String title;
+    String fileName;
+    String orientation;
 
     public Map<String, Path> getPaths() {
         return paths;

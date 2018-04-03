@@ -39,8 +39,7 @@ public class DataBusInternalRequestGateway implements DataBusRequestGateway {
     @Override
     public ResponseObject processRequest(MultiValueMap<String, Object> parameters, String resourceKey) throws Exception {
         RequestObject requestObject = requestObjectBuilder.build(parameters, resourceKey, RequestSource.INTERNAL);
-        ResponseObject responseObject = requestProcessor.processRequest(requestObject);
-        return responseObject;
+        return requestProcessor.processRequest(requestObject);
     }
 
     @Override
