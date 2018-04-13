@@ -1,5 +1,6 @@
 package com.bobwares.databus.common.renderer.pdf;
 
+import com.bobwares.databus.common.model.Alignment;
 import com.google.common.collect.ImmutableMap;
 import com.bobwares.databus.common.model.fieldtype.FieldTypeDefinition;
 import com.bobwares.databus.common.util.FieldTypeUtil;

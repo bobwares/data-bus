@@ -1,0 +1,135 @@
+{
+  "fileName":"filename",
+  "database": "PORTAL",
+  "orientation": "landscape",
+  "storedProcedure": "TEST_STORED_PROC",
+  "title": "Example Report",
+  "info" :{
+    "title":"Test Resource Title",
+    "description":"Test Resource Description",
+    "version":"version 1"
+  },
+  "headers": [
+    {
+      "title": "Report Description",
+      "fields": [
+        {
+          "label": "BAC",
+          "properties": [{"property": "bac"}]
+        },
+        {
+          "label": "Dealership Name",
+          "properties": [{"property": "dealershipName"}]
+        },
+        {
+          "label": "Dealership Address",
+          "properties": [
+            {"property": "address1"},
+            {"property": "address2"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Report Filters",
+      "fields": [
+        {
+          "label": "Transaction Date From",
+          "properties": [{"property": "fromDate"}]
+        },
+        {
+          "label": "Transaction Date To",
+          "properties": [{"property": "toDate"}]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "readOnly": false,
+      "label": "",
+      "property": "programId",
+      "required": false,
+      "type": "string"
+    }
+  ],
+  "fields": [
+    {
+      "alignment": "center",
+      "label": "Performance Month/Year",
+      "property": "monthEarned",
+      "readOnly": false,
+      "required": true,
+      "type": "monthYear",
+      "width": 130,
+      "regex" : "test",
+      "regexMsg" : "test"
+    },
+    {
+      "label": "Dividends Earned",
+      "property": "earnedAmount",
+      "readOnly": false,
+      "required": false,
+      "type": "dollars"
+    },
+    {
+      "alignment": "left",
+      "label": "Expiration Date",
+      "property": "expirationDate",
+      "readOnly": false,
+      "required": false,
+      "type": "date",
+      "width": 156
+    },
+    {
+      "alignment": "right",
+      "label": "Set To Expire",
+      "property": "balance",
+      "readOnly": false,
+      "required": false,
+      "type": "dollars",
+      "width": 100
+    },
+    {
+      "property": "paxId",
+      "readOnly": false,
+      "required": false,
+      "type": "dollars",
+      "hidden": true
+    },
+    {
+      "property": "moneyId",
+      "readOnly": false,
+      "required": false,
+      "type": "money",
+      "defaultValue" : "N/A"
+    },
+    {
+      "readOnly": true,
+      "property": "dataSource",
+      "label": "Source",
+      "required": false,
+      "type": "select",
+      "options": ["ADI", "FIELD", "GC", "MANUAL", "MOE", "OECONNECT"],
+      "width": 120
+    }
+  ],
+  "searchFields": [
+    [
+      {
+        "readOnly": false,
+        "label": "GMIN",
+        "property": "gmin",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "readOnly": false,
+        "label": "Last Name",
+        "property": "lastName",
+        "required": true,
+        "type": "string"
+      }
+    ]
+  ]
+}

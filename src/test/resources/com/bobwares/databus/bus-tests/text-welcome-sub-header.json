@@ -1,0 +1,37 @@
+{
+  "scope":"private",
+  "parentNode":"messages",
+  "storedProcedure": "DIY_GetProgramDefDataValue",
+  "title": "welcome message sub header",
+  "database" : "PORTAL",
+  "sortingAllowed" : false,
+  "filteringOnFieldsAllowed" : false,
+  "filters": [
+    {
+      "property": "eP_ProgramCode",
+      "type": "string"
+    },
+    {
+      "property": "ControlNum",
+      "type": "{{preferredBac}}"
+    },
+    {
+      "property": "CategoryCode",
+      "type": "string",
+      "value" : "MESSAGE"
+    },
+    {
+      "property": "ElementName",
+      "type": "string",
+      "value":"Welcome"
+    }
+  ],
+  "fields": [
+    {
+      "label": "Data Value",
+      "property": "dataValue",
+      "type": "string",
+      "propertyAlias": "welcome"
+    }
+  ]
+}

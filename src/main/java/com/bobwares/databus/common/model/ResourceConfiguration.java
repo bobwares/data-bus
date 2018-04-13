@@ -1,6 +1,7 @@
 package com.bobwares.databus.common.model;
 
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,10 @@ public class ResourceConfiguration {
     String title;
     String fileName;
     String orientation;
+    List<Field> filters;
+    private boolean sortingAllowed = true;
+    private boolean filteringOnFieldsAllowed = true;
+    String storedProcedure;
 
     public Map<String, Path> getPaths() {
         return paths;

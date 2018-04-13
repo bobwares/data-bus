@@ -1,0 +1,143 @@
+{
+  "storedProcedure": "UP_MM_ENROLLMENT_TXN_REPORT_GENERIC",
+  "title": "Enrollment Transaction Report",
+  "database": "EP",
+  "orientation": "landscape",
+  "filters": [
+    {
+      "property": "bacControlNum",
+      "type": "string"
+    },
+    {
+      "property": "programId",
+      "type": "string"
+    },
+    {
+      "property": "programPermissionFilters",
+      "type": "string"
+    }
+  ],
+  "headers": [
+    {
+      "title": "Report Description",
+      "fields": [
+        {
+          "label": "Program",
+          "properties": [{"property": "program"}]
+        },
+        {
+          "label": "BAC",
+          "properties": [{"property": "bac"}]
+        },
+        {
+          "label": "Dealership Name",
+          "properties": [{"property": "dealershipName"}]
+        },
+        {
+          "label": "Dealership Address",
+          "properties": [
+            {"property": "address1"},
+            {"property": "address2"}
+          ]
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "readOnly": false,
+      "label": "GMIN",
+      "property": "gmin",
+      "required": false,
+      "type": "string",
+      "group": "Enrolled Participant",
+      "width": 100
+    },
+    {
+      "readOnly": false,
+      "label": "Last Name",
+      "property": "lastName",
+      "required": false,
+      "type": "string",
+      "group": "Enrolled Participant",
+      "width": 80
+    },
+    {
+      "readOnly": false,
+      "label": "First Name",
+      "property": "firstName",
+      "required": false,
+      "type": "string",
+      "group": "Enrolled Participant",
+      "width": 80
+    },
+    {
+      "readOnly": false,
+      "value": false,
+      "label": "Program Admin",
+      "property": "ADENRL",
+      "required": false,
+      "type": "boolean",
+      "nullOption": "Not Set",
+      "group": "Enrolled Participant",
+      "width": 60
+    },{
+      "readOnly": false,
+      "value": false,
+      "label": "Manage Enrollment",
+      "property": "MMENRL",
+      "required": false,
+      "type": "boolean",
+      "nullOption": "Not Set",
+      "group": "Enrolled Participant",
+      "width": 60
+    },
+    {
+      "readOnly": false,
+      "value": false,
+      "label": "Enrollment Status",
+      "property": "ENROLLED",
+      "required": false,
+      "type": "boolean",
+      "nullOption": "Not Set",
+      "group": "Enrolled Participant",
+      "width": 60
+    },
+    {
+      "readOnly": false,
+      "label": "Modified Date/Time",
+      "property": "modifiedDatetime",
+      "required": false,
+      "type": "dateTime",
+      "group": "Enrollment Submitter",
+      "width": 120
+    },
+    {
+      "readOnly": false,
+      "label": "Submitter GMIN",
+      "property": "submitterGmin",
+      "required": false,
+      "type": "string",
+      "group": "Enrollment Submitter",
+      "width": 100
+    },
+    {
+      "readOnly": false,
+      "label": "Submitter Last Name",
+      "property": "submitterLastName",
+      "required": false,
+      "type": "string",
+      "group": "Enrollment Submitter",
+      "width": 120
+    },
+    {
+      "readOnly": false,
+      "label": "Submitter First Name",
+      "property": "submitterFirstName",
+      "required": false,
+      "type": "string",
+      "group": "Enrollment Submitter",
+      "width": 120
+    }
+  ]
+}

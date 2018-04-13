@@ -1,0 +1,163 @@
+{
+  "storedProcedure": "GMFDD_MM_EarnedDividendsDetailRpt",
+  "title": "Earned Dividends Detail Report",
+  "database" : "PORTAL",
+  "orientation": "landscape",
+  "headers": [
+    {
+      "title": "Report Description",
+      "fields": [
+        {
+          "label": "BAC",
+          "properties": [{"property": "bac"}]
+        },
+        {
+          "label": "Dealership Name",
+          "properties": [{"property": "dealershipName"}]
+        },
+        {
+          "label": "Dealership Address",
+          "properties": [
+            {"property": "address1"},
+            {"property": "address2"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Report Filters",
+      "fields": [
+        {
+          "label": "Transaction Date From",
+          "properties": [{"property" :"fromDate"}]
+        },
+        {
+          "label": "Transaction Date To",
+          "properties": [{"property" :"toDate"}]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "property": "bac",
+      "type": "string"
+    },
+    {
+      "readOnly": false,
+      "label": "",
+      "property": "fromDate",
+      "required": false,
+      "type": "monthYear"
+    },
+    {
+      "readOnly": false,
+      "label": "",
+      "property": "toDate",
+      "required": false,
+      "type": "monthYear"
+    }
+  ],
+  "fields": [
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "VIN",
+      "property": "vin",
+      "required": false,
+      "type": "string",
+      "width": 160
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Make",
+      "property": "make",
+      "required": false,
+      "type": "string",
+      "width": 100
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Model",
+      "property": "model",
+      "required": false,
+      "type": "string",
+      "width": 100
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Model Year",
+      "property": "modelYear",
+      "required": false,
+      "type": "year",
+      "width": 80
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Delivery Code",
+      "property": "deliveryCode",
+      "required": false,
+      "type": "string",
+      "width": 80
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Delivery Date",
+      "property": "deliveryDate",
+      "required": false,
+      "type": "date",
+      "width": 90
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Contract Date",
+      "property": "contractDate",
+      "required": false,
+      "type": "date",
+      "width": 90
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Financed Type",
+      "property": "financedType",
+      "required": false,
+      "type": "string",
+      "width": 90
+    },
+    {
+      "alignment": "center",
+      "readOnly": false,
+      "value": false,
+      "label": "GMF Financed",
+      "property": "gmfFinanced",
+      "required": false,
+      "type": "boolean",
+      "width": 90
+    },
+    {
+      "alignment": "right",
+      "readOnly": false,
+      "label": "GMF Financed Amount",
+      "property": "gmfFinancedAmount",
+      "required": false,
+      "type": "dollars",
+      "width": 126
+    },
+    {
+      "alignment": "left",
+      "readOnly": false,
+      "label": "Voucher ID",
+      "property": "voucherId",
+      "required": false,
+      "type": "string",
+      "width": 126
+    }
+  ]
+}

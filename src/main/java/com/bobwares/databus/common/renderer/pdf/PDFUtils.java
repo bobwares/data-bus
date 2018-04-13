@@ -1,5 +1,6 @@
 package com.bobwares.databus.common.renderer.pdf;
 
+import com.bobwares.databus.common.model.Alignment;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 

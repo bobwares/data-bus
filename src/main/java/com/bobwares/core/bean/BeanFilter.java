@@ -9,15 +9,15 @@ import java.util.HashSet;
 
 public class BeanFilter<T> {
 
-	Collection<T> beans;
-	boolean modifyBeanCollection = true;
-	boolean needToApplyFilter;
+	private Collection<T> beans;
+	private boolean modifyBeanCollection = true;
+	private boolean needToApplyFilter;
 
-	Collection<Class<? extends T>> includedClasses = new HashSet<>();
-	Collection<T> includedBeans = new HashSet<>();
+	private Collection<Class<? extends T>> includedClasses = new HashSet<>();
+	private Collection<T> includedBeans = new HashSet<>();
 
-	Collection<Class<? extends T>> excludedClasses = new HashSet<>();
-	Collection<T> excludedBeans = new HashSet<>();
+	private Collection<Class<? extends T>> excludedClasses = new HashSet<>();
+	private Collection<T> excludedBeans = new HashSet<>();
 
 
 	public static <T> BeanFilter<T> beans(Collection<T> beans) {

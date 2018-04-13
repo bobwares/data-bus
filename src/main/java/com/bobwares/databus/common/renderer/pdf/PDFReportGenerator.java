@@ -1,5 +1,6 @@
 package com.bobwares.databus.common.renderer.pdf;
 
+import com.bobwares.databus.common.model.Alignment;
 import com.bobwares.databus.common.model.ResourceConfiguration;
 import com.google.common.base.Strings;
 

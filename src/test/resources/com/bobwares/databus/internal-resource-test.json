@@ -1,0 +1,119 @@
+{
+  "info": {
+    "description": "This is a sample server Petstore server. You can find out more about Swagger at <a href='http://swagger.wordnik.com'>http://swagger.wordnik.com</a> or on irc.freenode.net, #swagger. For this sample, you can use the api key 'special-key' to test the authorization filters",
+    "version": "1.0.0",
+    "title": "Petstore API",
+    "contact": {
+      "name": "API Team",
+      "url": "http://wordnik.com",
+      "email": "apiteam@wordnik.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "scope":"internal",
+  "storedProcedure": "UP_MM_ENROLLMENT_PAGINATED",
+  "title": "Manage My Enrollment",
+  "database": "EP",
+  "orientation": "Landscape",
+  "filters": [
+    {
+      "property": "programId",
+      "type": "string"
+    }
+  ],
+  "headers": [
+    {
+      "title": "Report Description",
+      "fields": [
+        {
+          "label": "Program",
+          "properties": [{"property": "program"}]
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "readOnly": false,
+      "label": "GMIN",
+      "property": "gmin",
+      "regex": "^\\d{9}$",
+      "regexMsg": "must be 9 digits",
+      "required": false,
+      "type": "string",
+      "width": 80
+    },
+    {
+      "readOnly": false,
+      "label": "First Name",
+      "property": "firstName",
+      "required": false,
+      "type": "string",
+      "width": 80
+    },
+    {
+      "readOnly": false,
+      "label": "Last Name",
+      "property": "lastName",
+      "required": false,
+      "type": "string",
+      "width": 80
+    },
+    {
+      "readOnly": true,
+      "label": "Enrolled?",
+      "property": "enrolled",
+      "required": false,
+      "type": "string",
+      "alignment": "center",
+      "width": 60
+    },
+    {
+      "readOnly": false,
+      "label": "Email",
+      "property": "email",
+      "required": false,
+      "type": "string",
+      "width": 200
+    },
+    {
+      "readOnly": true,
+      "property": "roles",
+      "label": "Role(s)",
+      "required": false,
+      "type": "string",
+      "width": 160
+    },
+    {
+      "readOnly": true,
+      "property": "paxId",
+      "label": "Pax Id",
+      "required": true,
+      "type": "string",
+      "hidden":true
+    }
+  ],
+  "searchFields": [
+    [
+      {
+        "readOnly": false,
+        "label": "GMIN",
+        "property": "gmin",
+        "regex": "^\\d{9}$",
+        "regexMsg": "must be 9 digits",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "readOnly": false,
+        "label": "Last Name",
+        "property": "lastName",
+        "required": true,
+        "type": "string"
+      }
+    ]
+  ]
+}

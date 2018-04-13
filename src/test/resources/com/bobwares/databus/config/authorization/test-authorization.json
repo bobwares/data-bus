@@ -1,0 +1,13 @@
+{
+  "authKey": "test-authorization",
+  "authorizationProviderKey" : "securityPolicyAuthorizationProvider",
+  "authenticated" : true,
+  "roles" : ["role1", "role2"],
+  "permission" : "permission",
+  "targetId" : 1,
+  "targetTable" : "TABLE", 
+  "encryptedParameters" : true,
+  "impersonated" : false,
+  "ipRestriction" : "maritz",
+  "profiles" : ["profile1", "profile2"]
+}

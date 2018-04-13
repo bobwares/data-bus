@@ -9,12 +9,12 @@ import java.util.Map;
 
 public class ParamBuilder {
 
-    public static MultiValueMap<String, String> build() {
+    public static MultiValueMap<String, Object> build() {
         return build("1","-1", "", "false");
     }
 
-    public static MultiValueMap<String, String> build(String pageNum, String pageSize, String sort, String reverse) {
-        MultiValueMap<String, String> allFilters = new LinkedMultiValueMap<>();
+    public static MultiValueMap<String, Object> build(String pageNum, String pageSize, String sort, String reverse) {
+        MultiValueMap<String, Object> allFilters = new LinkedMultiValueMap<>();
 
         allFilters.add("af-value_1_key", "value_1");
         allFilters.add("filter-value_2_key", "value_2");
